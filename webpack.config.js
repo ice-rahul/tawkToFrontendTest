@@ -34,7 +34,26 @@ module.exports = {
 					name: '[name].[ext]',
 				},
 			},
-		  }]
+		},
+		{
+			test: /\.svg$/,
+			use: [
+				'babel-loader',
+				'vue-svg-loader',
+			],
+		},
+		{
+      test: /\.m?js$/,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: [
+            ['@babel/preset-env', { targets: "defaults" }]
+          ]
+        }
+      }
+    }]
 	},
 	plugins: [
 		new VueLoaderPlugin()
@@ -47,6 +66,7 @@ module.exports = {
 	devServer: {
 		contentBase: path.join(__dirname, 'public'),
 		port: 9000,
+		historyApiFallback: true,
 		before: function(app, server, compiler) {
 			app.get('/api/categories', function (req, res) {
 				res.json(dataObj.categories);

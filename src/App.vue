@@ -1,19 +1,14 @@
 <template>
-	<div>
-		<tawk-header></tawk-header>
-	</div>
+	<router-view></router-view>
 </template>
 
 <script>
-import Header from './components/Header.vue'
 
 export default {
-	components:{
-		'tawk-header': Header
-	}
+
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 	@import 'scss/main.scss';
 </style>
