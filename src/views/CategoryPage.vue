@@ -27,9 +27,9 @@ export default {
     console.log(this.id)
     Promise.all([
       axios
-      .get('http://localhost:9000/api/categories'),
+      .get('/api/categories'),
       axios
-      .get(`http://localhost:9000/api/category/${this.id}`)
+      .get(`/api/category/${this.id}`)
     ]).then((results) => {
       const [categories, articles] = results;
       let {data} = categories;

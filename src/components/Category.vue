@@ -25,7 +25,7 @@ export default {
   },
   mounted () {
     axios
-      .get('http://localhost:9000/api/categories')
+      .get('/api/categories')
       .then(response => {
         const {data} = response;
         let filteredData = [...data];
