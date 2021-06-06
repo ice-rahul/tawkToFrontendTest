@@ -11,4 +11,9 @@ export default {
 
 <style lang="scss">
 	@import 'scss/main.scss';
+	.page-container{
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
 </style>

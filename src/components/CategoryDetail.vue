@@ -70,9 +70,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../scss/_variables.scss";
 .category-detail-wrapper {
   display: flex;
-  background: #fafafa;
+  background: $text-bg;
   flex: 1;
   flex-direction: column;
   flex-wrap: wrap;

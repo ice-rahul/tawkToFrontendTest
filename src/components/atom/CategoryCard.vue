@@ -92,23 +92,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../scss/_variables.scss";
 .category-card-wrapper{
   width: 25%;
-  background: #ffffff;
+  background: $white;
   padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   border-radius: 5px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid $border-color;
   font-family: 'Lato';
   text-align: center;
   gap: 15px;
   cursor: pointer;
 
   &:hover{
-    box-shadow: 0 0 4px 0 grey;
+    box-shadow: 0 0 4px 0 $text-gray;
   }
 
   .category-row{
@@ -120,22 +121,22 @@ export default {
       padding-top: 10px;
       font-size: 20px;
       font-weight: bold;
-      color: #373737;
+      color: $text-black;
     }
     .icon{
       margin: 15px;
     }
     .articles{
       font-size: 13px;
-      color: #03A84E;
+      color: $green;
     }
     .lastUpdate{
       font-size: 11px;
-      color: #9C9AA6;
+      color: $text-gray;
     }
     .description{
       font-size: 13px;
-      color: #9C9AA6;
+      color: $text-gray;
       line-height: 18px;
     }
   }

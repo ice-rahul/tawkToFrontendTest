@@ -15,15 +15,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../scss/_variables.scss";
   input{
     padding: 10px 15px;
-    border: 1px solid #EEEEEE;
+    border: 1px solid $border-color;
     border-radius: 4px;
     font-size: 16px;
     font-weight: 400;
 
     &::placeholder{
-      color: #9C9AA6;
+      color: $text-gray;
     }
   }
 </style>

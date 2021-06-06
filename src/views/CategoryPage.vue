@@ -8,6 +8,8 @@
 <script>
 import Header from '../components/Header.vue';
 import CategoryDetails from '../components/CategoryDetail.vue';
+import {ALL_CATEGORIES_URL, CATEGORY_URL} from '../constants/API_URL';
+import {PUBLISHED} from '../constants/STATUS';
 import axios from "axios";
 
 export default {
@@ -24,12 +26,9 @@ export default {
     }
   },
   mounted() {
-    console.log(this.id)
     Promise.all([
-      axios
-      .get('/api/categories'),
-      axios
-      .get(`/api/category/${this.id}`)
+      axios.get(ALL_CATEGORIES_URL),
+      axios.get(`${CATEGORY_URL}/${this.id}`)
     ]).then((results) => {
       const [categories, articles] = results;
       let {data} = categories;
@@ -38,17 +37,9 @@ export default {
       }
       data = articles.data;
       if(data){
-        this.articles = data.filter(val => val.status == 'published');
+        this.articles = data.filter(val => val.status == PUBLISHED);
       }
     })
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.page-container{
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-</style>

@@ -40,11 +40,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+@import "../scss/_variables.scss";
 .category-wrapper{
   display: flex;
   justify-content: center;
-  background: #FAFAFA;
+  background: $text-bg;
   flex: 1;
   flex-wrap: wrap;
   padding: 25px;
