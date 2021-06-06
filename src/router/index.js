@@ -15,7 +15,12 @@ const routes = [
     path: '/category/:id',
     name: 'category',
     component: Category
-  }
+  },
+  {
+    path: '*',
+    name: 'catchAll',
+    component: Home
+ }
 ];
 
 const router = new VueRouter({
