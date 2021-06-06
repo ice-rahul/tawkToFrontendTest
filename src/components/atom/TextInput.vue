@@ -20,7 +20,7 @@ export default {
     padding: 10px 15px;
     border: 1px solid $border-color;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: $text-md;
     font-weight: 400;
 
     &::placeholder{

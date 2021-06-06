@@ -39,14 +39,14 @@ export default {
   h1 {
     font-style: normal;
     font-weight: 700;
-    font-size: 34px;
+    font-size: $text-xl;
     line-height: 41px;
   }
 
   h3 {
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: $text-lg;
     line-height: 24px;
   }
 }

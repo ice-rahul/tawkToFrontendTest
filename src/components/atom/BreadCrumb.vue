@@ -29,7 +29,7 @@ export default {
 @import "../../scss/_variables.scss";
 .bread-crumb-container{
   font-family: $font-family;
-  font-size: 13px;
+  font-size: $text-sm;
   color: $text-gray;
 
   .selected {

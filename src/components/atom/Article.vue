@@ -58,12 +58,12 @@ export default {
       gap: 5px;
     }
     .description{
-      font-size: 20px;
+      font-size: $text-lg;
       color: $text-black;
     }
     .date{
       color: $text-gray;
-      font-size: 11px;
+      font-size: $text-xs;
     }
   }
 </style>

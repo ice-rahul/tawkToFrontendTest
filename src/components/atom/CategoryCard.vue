@@ -119,7 +119,7 @@ export default {
 
     .category-title{
       padding-top: 10px;
-      font-size: 20px;
+      font-size: $text-lg;
       font-weight: bold;
       color: $text-black;
     }
@@ -127,15 +127,15 @@ export default {
       margin: 15px;
     }
     .articles{
-      font-size: 13px;
+      font-size: $text-sm;
       color: $green;
     }
     .lastUpdate{
-      font-size: 11px;
+      font-size: $text-xs;
       color: $text-gray;
     }
     .description{
-      font-size: 13px;
+      font-size: $text-sm;
       color: $text-gray;
       line-height: 18px;
     }
