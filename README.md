@@ -28,3 +28,7 @@ But if you want to move things around, feel free to do so.
   <kbd><img src="https://user-images.githubusercontent.com/22559660/120936048-6bb8fb80-c723-11eb-9c1b-a8ecfda578e0.png" width="300" /></kbd>
   <kbd><img src="https://user-images.githubusercontent.com/22559660/120936071-93a85f00-c723-11eb-9008-9370e40454cf.png" width="300" /></kbd>
 </p>
+
+### Figma Design Link
+
+[Click Here](https://www.figma.com/file/AeDrzKULFKrTRzrH5WkMgU/Frontend-Test-1)
