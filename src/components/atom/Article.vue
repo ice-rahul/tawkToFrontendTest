@@ -34,14 +34,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../scss/_variables.scss";
   .article-wrapper {
     padding: 15px;
     display: flex;
-    border: 1px solid #EEEEEE;
+    border: 1px solid $border-color;
     border-radius: 4px;
-    background: #fff;
+    background: $white;
     width: 100%;
-    font-family: 'Lato';
+    font-family: $font-family;
     cursor: pointer;
 
     .logo, .action {
@@ -58,10 +59,10 @@ export default {
     }
     .description{
       font-size: 20px;
-      color: #373737;
+      color: $text-black;
     }
     .date{
-      color: #9C9AA6;
+      color: $text-gray;
       font-size: 11px;
     }
   }

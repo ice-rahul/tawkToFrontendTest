@@ -26,13 +26,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../scss/_variables.scss";
 .bread-crumb-container{
-  font-family: 'Lato';
+  font-family: $font-family;
   font-size: 13px;
-  color: #9C9AA6;
+  color: $text-gray;
 
   .selected {
-    color: #03A84E;
+    color: $green;
     cursor: pointer;
   }
 
