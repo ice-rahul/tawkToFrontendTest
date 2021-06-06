@@ -32,3 +32,7 @@ But if you want to move things around, feel free to do so.
 ### Figma Design Link
 
 [Click Here](https://www.figma.com/file/AeDrzKULFKrTRzrH5WkMgU/Frontend-Test-1)
+
+### Tech Stack
+
+- VueJS
