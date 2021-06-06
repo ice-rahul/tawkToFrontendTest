@@ -14,8 +14,8 @@
 </template>
 
 <script>
-import FileTextIcon from '../../assets/icons/file-text.svg'
-import NextIcon from '../../assets/icons/next-icon.svg'
+import FileTextIcon from '../../assets/icons/file-text.svg';
+import NextIcon from '../../assets/icons/icon-next.svg';
 export default {
   name: "Article",
   props: {
