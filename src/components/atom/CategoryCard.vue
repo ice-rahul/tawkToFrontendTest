@@ -2,12 +2,12 @@
   <div class="category-card-wrapper" v-on:click="onClick(id)">
     <div class="category-row">
       <component v-bind:is="findIcon" class="tab"></component>
-      <span class="category-title" v-if="title">{{title}}</span>
+      <p class="category-title" v-if="title">{{title}}</p>
     </div>
     <div class="category-row">
-      <span class="articles" v-if="articles">{{articles}} articles</span>
-      <span class="lastUpdate" v-if="lastUpdate">Last update {{calcDate()}}</span>
-      <span class="description" v-if="description">{{description}}</span>
+      <p class="articles" v-if="articles">{{articles}} articles</p>
+      <p class="lastUpdate" v-if="lastUpdate">Last update {{calcDate()}}</p>
+      <p class="description" v-if="description">{{description}}</p>
     </div>
   </div>
 </template>
@@ -92,70 +92,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../scss/_variables.scss";
-.category-card-wrapper{
-  width: 25%;
-  background: $white;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 5px;
-  border: 1px solid $border-color;
-  font-family: 'Lato';
-  text-align: center;
-  gap: 15px;
-  cursor: pointer;
-
-  &:hover{
-    box-shadow: 0 0 4px 0 $text-gray;
-  }
-
-  .category-row{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .category-title{
-      padding-top: 10px;
-      font-size: $text-lg;
-      font-weight: bold;
-      color: $text-black;
-    }
-    .icon{
-      margin: 15px;
-    }
-    .articles{
-      font-size: $text-sm;
-      color: $green;
-    }
-    .lastUpdate{
-      font-size: $text-xs;
-      color: $text-gray;
-    }
-    .description{
-      font-size: $text-sm;
-      color: $text-gray;
-      line-height: 18px;
-    }
-  }
-
-  @media only screen and (max-width: 1200px) {
-    width: 30%;
-  }
-
-  @media only screen and (max-width: 900px) {
-    width: 40%;
-  }
-
-  @media only screen and (max-width: 750px) {
-    width: 48%;
-  }
-
-  @media only screen and (max-width: 425px) {
-    width: 100%;
-  }
-
-}
+@import "~styles/modules/CategoryCard.scss";
 </style>

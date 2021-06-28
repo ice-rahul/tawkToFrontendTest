@@ -1,0 +1,8 @@
+@import "~styles/_variables.scss";
+.category-wrapper {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  flex-wrap: wrap;
+  padding: 25px;
+}

@@ -26,20 +26,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../scss/_variables.scss";
-.bread-crumb-container{
-  font-family: $font-family;
-  font-size: $text-sm;
-  color: $text-gray;
-
-  .selected {
-    color: $green;
-    cursor: pointer;
-  }
-
-  .fa-chevron-right{
-    color: #D3D3D3;
-    margin: 0 10px;
-  }
-}
+@import "~styles/modules/BreadCrumb.scss";
 </style>

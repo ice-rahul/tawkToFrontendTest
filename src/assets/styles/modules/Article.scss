@@ -1,0 +1,33 @@
+@import "~styles/_variables.scss";
+.article-wrapper {
+  padding: 15px;
+  display: flex;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  background: $white;
+  width: 100%;
+  font-family: $font-family;
+  cursor: pointer;
+
+  .logo,
+  .action {
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+  }
+
+  .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .description {
+    font-size: $text-lg;
+    color: $text-black;
+    margin-bottom: 5px;
+  }
+  .date {
+    color: $text-gray;
+    font-size: $text-xs;
+  }
+}

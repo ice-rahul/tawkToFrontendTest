@@ -10,7 +10,7 @@ export default {
 </script>
 
 <style lang="scss">
-	@import 'scss/main.scss';
+	@import 'assets/styles/main.scss';
 	.page-container{
 		display: flex;
 		flex-direction: column;

@@ -16,6 +16,7 @@
 <script>
 import FileTextIcon from '../../assets/icons/file-text.svg';
 import NextIcon from '../../assets/icons/icon-next.svg';
+
 export default {
   name: "Article",
   props: {
@@ -34,36 +35,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../scss/_variables.scss";
-  .article-wrapper {
-    padding: 15px;
-    display: flex;
-    border: 1px solid $border-color;
-    border-radius: 4px;
-    background: $white;
-    width: 100%;
-    font-family: $font-family;
-    cursor: pointer;
-
-    .logo, .action {
-      padding: 0 25px;
-      display: flex;
-      align-items: center;
-    }
-
-    .text{
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
-    .description{
-      font-size: $text-lg;
-      color: $text-black;
-    }
-    .date{
-      color: $text-gray;
-      font-size: $text-xs;
-    }
-  }
+@import "~styles/modules/Article.scss";
 </style>

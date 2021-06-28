@@ -1,0 +1,16 @@
+@import "~styles/_variables.scss";
+.bread-crumb-container {
+  font-family: $font-family;
+  font-size: $text-sm;
+  color: $text-gray;
+
+  .selected {
+    color: $green;
+    cursor: pointer;
+  }
+
+  .fa-chevron-right {
+    color: #d3d3d3;
+    margin: 0 10px;
+  }
+}
