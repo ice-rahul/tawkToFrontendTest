@@ -10,6 +10,11 @@ export const routes = [
     component: () => import('../views/CategoryPage.vue')
   },
   {
+    path: '/search/:id',
+    name: 'search',
+    component: () => import('../views/SearchPage.vue')
+  },
+  {
     path: '*',
     name: 'catchAll',
     component: () => import('../views/HomePage.vue')

@@ -71,7 +71,7 @@ export default {
       return TOTAL_YEAR > 0 ? `${TOTAL_YEAR} years ${Math.floor(TOTAL_DAY)} days ago` : `${Math.floor(TOTAL_DAY)} days ago`;
     },
     onClick: function(id) {
-      this.clickable && this.$router.push(`category/${id}`);
+      this.clickable && this.$router.push(`/category/${id}`);
     }
   },
   computed: {

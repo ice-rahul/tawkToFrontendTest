@@ -1,5 +1,5 @@
 <template>
-  <input type="text" :placeholder="placeholder" />
+  <input type="text" v-model="inputText" :placeholder="placeholder" @input="onChange" />
 </template>
 
 <script>
@@ -9,6 +9,16 @@ export default {
     placeholder: {
       type: String,
       default: 'Search for answers'
+    }
+  },
+  data(){
+    return{
+      inputText: ''
+    }
+  },
+  methods:{
+    onChange(){
+      this.$emit('onChange', this.inputText)
     }
   }
 }

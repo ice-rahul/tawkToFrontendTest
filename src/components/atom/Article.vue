@@ -5,6 +5,7 @@
     </div>
     <div class="text">
       <div class="description">{{article}}</div>
+      <div class="description" v-if="description !== ''">{{description}}</div>
       <div class="date">{{publishedOn}}</div>
     </div>
     <div class="action">
@@ -25,6 +26,10 @@ export default {
     },
     publishedOn: {
       type: String
+    },
+    description: {
+      type: String,
+      default: '',
     }
   },
   components: {

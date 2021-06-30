@@ -5,8 +5,8 @@
       <h3>Everything you need to manage your messaging</h3>
     </div>
     <div id="header-search">
-      <TextInput class="text-input" />
-			<Button class="button" />
+      <TextInput class="text-input" @onChange="handleChange" />
+			<Button class="button" @onClick="onClick" />
     </div>
   </div>
 </template>
@@ -20,6 +20,19 @@ export default {
     TextInput,
 		Button
   },
+  data(){
+    return{
+      searchText: "",
+    }
+  },
+  methods: {
+    onClick(){
+      this.$router.push(`/search/${this.searchText}`)
+    },
+    handleChange(inputValue){
+      this.searchText=inputValue;
+    }
+  }
 };
 </script>
 

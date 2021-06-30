@@ -1,5 +1,5 @@
 <template>
-  <button :style="{background: btnColor}">
+  <button :style="{background: btnColor}"  @click="buttonClicked">
     <i :class="icon" :style="{color: txtColor, fontSize: '1.5em'}" aria-hidden="true"></i>
   </button>
 </template>
@@ -19,6 +19,11 @@ export default {
     txtColor: {
       type: String,
       default: '#ffffff'
+    }
+  },
+  methods: {
+    buttonClicked(){
+      this.$emit('onClick')
     }
   }
 }

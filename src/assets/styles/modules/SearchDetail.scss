@@ -1,0 +1,66 @@
+@import "~styles/_variables.scss";
+.search-detail-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 25px 10%;
+
+  .search-detail-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .card {
+    height: max-content;
+    width: 100%;
+  }
+  .left-container {
+    width: 25%;
+    margin-right: 5%;
+  }
+  .right-container {
+    width: 70%;
+    .article-container {
+      margin-bottom: 15px;
+    }
+  }
+  .card-top {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-width: 0;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  .card-bottom {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding-bottom: 50px;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    padding: 25px 5%;
+  }
+
+  @media only screen and (max-width: 900px) {
+    padding: 25px 10px;
+  }
+
+  @media only screen and (max-width: 750px) {
+    .category-detail-container {
+      flex-direction: column;
+    }
+    .left-container {
+      width: 100%;
+    }
+    .right-container {
+      padding-top: 15px;
+      width: 100%;
+    }
+  }
+}
